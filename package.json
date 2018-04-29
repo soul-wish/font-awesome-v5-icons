@@ -1,6 +1,6 @@
 {
   "name": "font-awesome-v5-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns actual list of Font Awesome icons (works with FA version 5)",
   "main": "index.js",
   "scripts": {
