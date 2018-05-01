@@ -51,6 +51,10 @@ faIcons.getListByKeys(['name', 'styles']).then(icons => console.log(icons[0]));
 //=> { name: '500px', styles: [ 'brands' ] }
 ```
 
+## Related
+
+[font-awesome-icons](https://github.com/soul-wish/font-awesome-icons) – separate package for Font Awesome v4
+
 ## License
 
 MIT © [Sergey Lysenko](http://soulwish.info)
