@@ -7,10 +7,15 @@ const convertToArray = (data) => {
     const iconsData = {
         icons: [],
     };
-    Object.keys(data).map(iconName => iconsData.icons.push({
-        name: iconName,
-        ...data[iconName],
-    }));
+    Object.keys(data).map((iconName) => {
+        if (iconName === 'infinity') {
+            data[iconName].label = `${data[iconName].label}`;
+        }
+        return iconsData.icons.push({
+            name: iconName,
+            ...data[iconName],
+        });
+    });
     return iconsData;
 };
 
@@ -24,9 +29,8 @@ const cleanUpObject = (data, fields) => data.map(icon => oPick(icon, fields));
 
 module.exports.getList = getIcons;
 
-module.exports.getListByKeys = fields =>
-    new Promise((resolve) => {
-        getIcons()
-            .then(data => resolve(cleanUpObject(data, fields)))
-            .catch(() => resolve(cleanUpObject(backupList.icons, fields)));
-    });
+module.exports.getListByKeys = fields => new Promise((resolve) => {
+    getIcons()
+        .then(data => resolve(cleanUpObject(data, fields)))
+        .catch(() => resolve(cleanUpObject(backupList.icons, fields)));
+});
