@@ -36,12 +36,12 @@
   "homepage": "https://github.com/soul-wish/font-awesome-v5-icons#readme",
   "devDependencies": {
     "ava": "^0.25.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.11.0"
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
-    "got": "^8.3.0",
+    "got": "^9.2.2",
     "object.pick": "^1.3.0",
     "yamljs": "^0.3.0"
   }
