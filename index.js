@@ -19,7 +19,7 @@ const convertToArray = (data) => {
     return iconsData;
 };
 
-const getIcons = () => got('https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/advanced-options/metadata/icons.yml')
+const getIcons = () => got('https://raw.githubusercontent.com/FortAwesome/Font-Awesome/5.x/metadata/icons.yml')
     .then(response => YAML.parse(response.body))
     .then(iconsObject => convertToArray(iconsObject))
     .then(data => data.icons)
