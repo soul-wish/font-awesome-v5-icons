@@ -4,7 +4,7 @@ import iconsBackup from './data/icons.json';
 
 test('Check amount of icons for latest FA version', async (t) => {
     const faIcons = await icons.getList();
-    t.is(faIcons.length, 1238);
+    t.is(faIcons.length, 1458);
 });
 
 test('Check if backup and latest FA icons are the same', async (t) => {
