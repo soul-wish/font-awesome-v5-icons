@@ -3,6 +3,7 @@
   "version": "1.2.1",
   "description": "Returns actual list of Font Awesome icons (works with FA version 5)",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "ava"
   },

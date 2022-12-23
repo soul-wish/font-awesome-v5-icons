@@ -25,7 +25,8 @@ faIcons.getList().then(icons => console.log(icons[0]));
   label: '500px',
   search: { terms: [] },
   styles: [ 'brands' ],
-  unicode: 'f26e'
+  unicode: 'f26e',
+  voted: false
 }
 */
 ```
