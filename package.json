@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/soul-wish/font-awesome-v5-icons#readme",
   "devDependencies": {
-    "ava": "^2.4.0",
+    "ava": "^5.1.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.3"
